@@ -1,17 +1,24 @@
 {
-  "name": "zyn",
+  "name": "webpack-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "webpack"
   },
-  "author": "",
+  "author": "zyn",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "css-loader": "^2.1.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack-cli": "^3.3.3"
   },
   "dependencies": {
+    "file-loader": "^4.0.0",
+    "url-loader": "^2.0.0",
     "webpack": "^4.33.0"
   }
 }
