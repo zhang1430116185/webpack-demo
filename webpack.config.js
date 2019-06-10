@@ -16,17 +16,23 @@ module.exports = {
                   }]
             },
             {
+                test: /\.(eot|ttf|svg|woff)$/,
+                use:[{
+                    loader: 'file-loader'
+                  }]
+            },
+            {
                 test: /\.css$/,
                 use:[
                         {loader:"style-loader"},
-                        { loader: "css-loader" },
                         {
-                            loader: "postcss-loader",
-                            options: {
-                                // plugins: [
-                                //     require("autoprefixer") /*在这里添加*/
-                                // ]
-                            }
+                            loader: "css-loader",
+                            // options:{
+                            //     modules:true
+                            // }
+                        },
+                        {
+                            loader: "postcss-loader"
                         }
                 ]
             }
