@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 
 var root = document.getElementById('root');
 var p = document.createElement('p');
@@ -50,3 +51,13 @@ if(module.hot) {
 		number();
 	})
 }
+
+// es6  babel
+const arr = [
+	new Promise(() => {}),
+	new Promise(() => {})
+]
+arr.map((item) => {
+	console.log(item);
+})
+// tree shaking

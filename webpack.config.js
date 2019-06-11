@@ -5,11 +5,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 module.exports = {
     mode:'development',
-    devtool:'source-map',
+    devtool:'cheap-module-eval-source-map',
     // webpack-dev-server
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        open:true,
+        open:false,
         port: 8080,
         hot:true,
         hotOnly:true
@@ -22,6 +22,30 @@ module.exports = {
     },
     module:{
         rules:[
+            // 第二个参数表示 只对使用es6语法的进行编译 减少生成代码的大小  提高性能
+    // "presets": [["@babel/preset-env",{
+    //     targets:{
+    //         // 只用兼容chrome 67版本 对于低版本不用去转换 节省性能
+    //         chrome:"67"
+    //     },
+    //     useBuiltIns:'usage'
+    // }]]
+    // "plugins": [
+    //     [
+    //         "@babel/plugin-transform-runtime",
+    //         {
+    //             "corejs": 2,
+    //             "helpers": true,
+    //             "regenerator": true,
+    //             "useESModules": false
+    //       }
+    //     ]
+    // ]
+            { 
+                test: /\.js$/, 
+                exclude: /node_modules/, 
+                loader: "babel-loader"
+            },
             {
                 test: /\.(png|jpe?g|gif)$/,
                 use:[{
