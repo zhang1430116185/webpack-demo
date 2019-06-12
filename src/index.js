@@ -61,3 +61,5 @@ arr.map((item) => {
 	console.log(item);
 })
 // tree shaking
+import {square} from './math.js';
+console.log(square(2));

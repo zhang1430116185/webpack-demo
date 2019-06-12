@@ -1,9 +1,12 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
+  "sideEffects":false, 
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev":"webpack-dev-server --config webpack.dev.js",
+    "build":"webpack --config webpack.prod.js",
     "start": "webpack-dev-server"
   },
   "author": "zyn",
