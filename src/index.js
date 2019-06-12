@@ -1,4 +1,4 @@
-import "@babel/polyfill";
+// import "@babel/polyfill";
 
 var root = document.getElementById('root');
 var p = document.createElement('p');
@@ -63,3 +63,18 @@ arr.map((item) => {
 // tree shaking
 import {square} from './math.js';
 console.log(square(2));
+
+// lodash
+// import _ from 'lodash';
+// console.log(_.join(['a','b','c'],'*'));
+
+function getComponent(){
+	return import('lodash').then(({ default: _ }) =>{
+		var element = document.createElement('div');
+		element.innerHTML = _.join(['Dell', 'Lee'], '-');
+		return element;
+	})
+}
+getComponent().then(element => {
+	document.body.appendChild(element);
+});

@@ -1,14 +1,13 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-// var CleanWebpackPlugin = require('clean-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const merge = require('webpack-merge');
+const commonConfig = require('./webpack.common.js');
 const webpack = require('webpack');
-module.exports = {
+const devConfig = {
     mode:'development',
     devtool:'cheap-module-eval-source-map',
     // webpack-dev-server
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        // contentBase: path.join(__dirname, 'dist'),
         open:false,
         port: 8080,
         hot:true,
@@ -42,14 +41,6 @@ module.exports = {
     // development配置  要在package.json  中使用sideEffects属性
     optimization:{
         usedExports:true
-    },
-    output:{
-        // 配置前缀
-        // publicPath: 'https://cdn.example.com/assets/',
-        // publicPath: '/',//表示根路径
-        // 输出文件名字
-        filename:'[name].js',
-        // 输出文件路径
-        path:path.resolve(__dirname,'dist')
     }
 }
+module.exports = merge(commonConfig,devConfig);
