@@ -65,16 +65,30 @@ import {square} from './math.js';
 console.log(square(2));
 
 // lodash
+// 同步
 // import _ from 'lodash';
 // console.log(_.join(['a','b','c'],'*'));
 
-function getComponent(){
-	return import(/*webpackChunkName:'lodash'*/'lodash').then(({ default: _ }) =>{
-		var element = document.createElement('div');
-		element.innerHTML = _.join(['Dell', 'Lee'], '-');
-		return element;
-	})
-}
-getComponent().then(element => {
-	document.body.appendChild(element);
+// 异步
+
+// function getComponent(){
+// 	// 魔法注释，加上后，打包出来的js会是你注释的值，否则为一个id(如0)值
+// 	return import(/*webpackChunkName:'lodash'*/'lodash').then(({ default: _ }) =>{
+// 		var element = document.createElement('div');
+// 		element.innerHTML = _.join(['zhang', 'yn'], '-');
+// 		return element;
+// 	})
+// }
+document.addEventListener('click',() => {
+	getComponent().then(element => {
+		document.body.appendChild(element);
+	});
 });
+
+// es7语法省去promise语法
+async function getComponent(){
+	const { default: _ } = await import(/*webpackChunkName:'lodash'*/'lodash');
+	const element = document.createElement('div');
+    element.innerHTML = _.join(['z', 'b'], '-');
+    return element;
+}
