@@ -56,8 +56,19 @@ module.exports = {
     ],
     optimization: {
         splitChunks: {
-            chunks :'all'
-        }
+            chunks: 'async',
+            minSize: 30000,
+            maxSize: 0,
+            minChunks: 1,
+            maxAsyncRequests: 5,
+            maxInitialRequests: 3,
+            automaticNameDelimiter: '~',
+            name: true,
+            cacheGroups: {
+              vendors: false,
+              default:false
+            }
+          }
     },
     output:{
         // 配置前缀
