@@ -35,12 +35,35 @@ const devConfig = {
     //       }
     //     ]
     // ]
+    module:{
+        rules:[
+            {
+                test: /\.css$/,
+                use:[
+                        {loader:"style-loader"},
+                        {
+                            loader: "css-loader",
+                            // options:{
+                            //     modules:true
+                            // }
+                        },
+                        {
+                            loader: "postcss-loader"
+                        }
+                ]
+            }
+        ]
+    },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ],
-    // development配置  要在package.json  中使用sideEffects属性
-    optimization:{
-        usedExports:true
+    output:{
+        // 配置前缀
+        // publicPath: 'https://cdn.example.com/assets/',
+        // publicPath: '/',//表示根路径
+        // 输出文件名字
+        filename:'[name].js',
+        chunkFilename:'[name].js'
     }
 }
 module.exports = merge(commonConfig,devConfig);

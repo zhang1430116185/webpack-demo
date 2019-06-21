@@ -30,21 +30,6 @@ module.exports = {
                 use:[{
                     loader: 'file-loader'
                   }]
-            },
-            {
-                test: /\.css$/,
-                use:[
-                        {loader:"style-loader"},
-                        {
-                            loader: "css-loader",
-                            // options:{
-                            //     modules:true
-                            // }
-                        },
-                        {
-                            loader: "postcss-loader"
-                        }
-                ]
             }
         ]
     },
@@ -55,8 +40,11 @@ module.exports = {
         new CleanWebpackPlugin()
     ],
     optimization: {
+        // development配置  要在package.json  中使用sideEffects属性
+        
+         usedExports:true,
         splitChunks: {
-            chunks: 'async',
+            chunks: 'all',
             minSize: 30000,
             maxSize: 0,
             minChunks: 1,
@@ -70,12 +58,14 @@ module.exports = {
             }
           }
     },
+    performance:false,
     output:{
         // 配置前缀
         // publicPath: 'https://cdn.example.com/assets/',
         // publicPath: '/',//表示根路径
         // 输出文件名字
-        filename:'[name].js',
+        // filename:'[name].js',
+        // chunkFilename:'[name].chunk.js',
         // 输出文件路径
         path:path.resolve(__dirname,'../dist')
     }

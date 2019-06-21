@@ -71,14 +71,14 @@ console.log(square(2));
 
 // 异步
 
-// function getComponent(){
-// 	// 魔法注释，加上后，打包出来的js会是你注释的值，否则为一个id(如0)值
-// 	return import(/*webpackChunkName:'lodash'*/'lodash').then(({ default: _ }) =>{
-// 		var element = document.createElement('div');
-// 		element.innerHTML = _.join(['zhang', 'yn'], '-');
-// 		return element;
-// 	})
-// }
+function getComponent(){
+	// 魔法注释，加上后，打包出来的js会是你注释的值，否则为一个id(如0)值
+	return import(/*webpackChunkName:'lodash'*/'lodash').then(({ default: _ }) =>{
+		var element = document.createElement('div');
+		element.innerHTML = _.join(['zhang', 'yn'], '-');
+		return element;
+	})
+}
 document.addEventListener('click',() => {
 	getComponent().then(element => {
 		document.body.appendChild(element);
@@ -86,9 +86,24 @@ document.addEventListener('click',() => {
 });
 
 // es7语法省去promise语法
-async function getComponent(){
-	const { default: _ } = await import(/*webpackChunkName:'lodash'*/'lodash');
-	const element = document.createElement('div');
-    element.innerHTML = _.join(['z', 'b'], '-');
-    return element;
-}
+// async function getComponent(){
+// 	const { default: _ } = await import(/*webpackChunkName:'lodash'*/'lodash');
+// 	const element = document.createElement('div');
+//     element.innerHTML = _.join(['z', 'b'], '-');
+//     return element;
+// }
+
+// prefetch
+
+// document.addEventListener('click',() => {
+// 	import(/* webpackPrefetch: true */ './click.js').then(({default:func}) => {
+// 		func();
+// 	})
+// });
+
+// 浏览器缓存
+import _ from 'lodash';
+import $ from 'jquery';
+const dom = $('<div>');
+dom.html(_.join(['z','y'],'-----'));
+$(body).append(dom);

@@ -2,13 +2,13 @@
   "errors": [],
   "warnings": [],
   "version": "4.33.0",
-  "hash": "8db13d0c45ee65e74ae9",
-  "time": 1474,
-  "builtAt": 1560416122331,
+  "hash": "41f28414724770414f24",
+  "time": 1460,
+  "builtAt": 1560490767229,
   "publicPath": "",
   "outputPath": "E:\\study\\webpack-demo\\dist",
   "assetsByChunkName": {
-    "lodash": "lodash.js",
+    "lodash": "lodash.chunk.js",
     "main": "main.js"
   },
   "assets": [
@@ -55,7 +55,7 @@
       "emitted": true
     },
     {
-      "name": "lodash.js",
+      "name": "lodash.chunk.js",
       "size": 1420289,
       "chunks": [
         "lodash"
@@ -67,7 +67,7 @@
     },
     {
       "name": "main.js",
-      "size": 117211,
+      "size": 117667,
       "chunks": [
         "main"
       ],
@@ -106,7 +106,7 @@
         "lodash"
       ],
       "assets": [
-        "lodash.js"
+        "lodash.chunk.js"
       ],
       "children": {},
       "childAssets": {}
@@ -123,7 +123,7 @@
         "lodash"
       ],
       "files": [
-        "lodash.js"
+        "lodash.chunk.js"
       ],
       "hash": "deaa091b039c33ff0519",
       "siblings": [],
@@ -156,15 +156,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -178,7 +178,7 @@
               "moduleName": "./src/index.js",
               "type": "import()",
               "userRequest": "lodash",
-              "loc": "77:12-79:11"
+              "loc": "62:9-64:11"
             }
           ],
           "usedExports": true,
@@ -210,8 +210,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -219,15 +219,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\lodash\\lodash.js",
               "name": "./node_modules/lodash/lodash.js",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             }
           ],
           "profile": {
             "factory": 4,
-            "building": 3
+            "building": 1
           },
           "failed": false,
           "errors": 0,
@@ -273,8 +273,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -282,15 +282,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\lodash\\lodash.js",
               "name": "./node_modules/lodash/lodash.js",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             }
           ],
           "profile": {
             "factory": 4,
-            "building": 3
+            "building": 1
           },
           "failed": false,
           "errors": 0,
@@ -321,7 +321,7 @@
           "module": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "moduleIdentifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "moduleName": "./src/index.js",
-          "loc": "77:12-79:11",
+          "loc": "62:9-64:11",
           "request": "lodash",
           "reasons": []
         }
@@ -332,14 +332,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 24448,
+      "size": 24619,
       "names": [
         "main"
       ],
       "files": [
         "main.js"
       ],
-      "hash": "61c67ff304d288548a67",
+      "hash": "39d7fdce3c04977926be",
       "siblings": [],
       "parents": [],
       "children": [
@@ -370,8 +370,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -379,15 +379,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             }
           ],
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           },
           "failed": false,
           "errors": 0,
@@ -451,8 +451,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -460,16 +460,16 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\style.css",
               "name": "./src/style.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             }
           ],
           "profile": {
-            "factory": 115,
-            "building": 396,
-            "dependencies": 2
+            "factory": 116,
+            "building": 401,
+            "dependencies": 1
           },
           "failed": false,
           "errors": 0,
@@ -533,8 +533,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -542,9 +542,9 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             },
             {
@@ -553,13 +553,13 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
               "profile": {
                 "factory": 118,
-                "building": 494
+                "building": 501
               }
             }
           ],
           "profile": {
-            "factory": 266,
-            "building": 3
+            "factory": 267,
+            "building": 2
           },
           "failed": false,
           "errors": 0,
@@ -614,8 +614,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -623,9 +623,9 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             },
             {
@@ -634,13 +634,13 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
               "profile": {
                 "factory": 118,
-                "building": 494
+                "building": 501
               }
             }
           ],
           "profile": {
-            "factory": 266,
-            "building": 3
+            "factory": 267,
+            "building": 2
           },
           "failed": false,
           "errors": 0,
@@ -686,8 +686,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -695,15 +695,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             }
           ],
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           },
           "failed": false,
           "errors": 0,
@@ -758,8 +758,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -767,9 +767,9 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             },
             {
@@ -778,13 +778,13 @@
               "name": "./node_modules/style-loader/lib/addStyles.js",
               "profile": {
                 "factory": 118,
-                "building": 494
+                "building": 501
               }
             }
           ],
           "profile": {
-            "factory": 8,
-            "building": 4
+            "factory": 2,
+            "building": 6
           },
           "failed": false,
           "errors": 0,
@@ -830,15 +830,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -915,15 +915,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -982,15 +982,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -1049,8 +1049,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -1058,9 +1058,9 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             },
             {
@@ -1069,13 +1069,13 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
               "profile": {
                 "factory": 118,
-                "building": 494
+                "building": 501
               }
             }
           ],
           "profile": {
-            "factory": 266,
-            "building": 3
+            "factory": 267,
+            "building": 2
           },
           "failed": false,
           "errors": 0,
@@ -1132,8 +1132,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -1141,9 +1141,9 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             },
             {
@@ -1152,13 +1152,13 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
               "profile": {
                 "factory": 118,
-                "building": 494
+                "building": 501
               }
             }
           ],
           "profile": {
-            "factory": 266,
-            "building": 3
+            "factory": 267,
+            "building": 2
           },
           "failed": false,
           "errors": 0,
@@ -1206,8 +1206,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -1215,9 +1215,9 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             },
             {
@@ -1226,13 +1226,13 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
               "profile": {
                 "factory": 118,
-                "building": 494
+                "building": 501
               }
             }
           ],
           "profile": {
-            "factory": 266,
-            "building": 3
+            "factory": 267,
+            "building": 2
           },
           "failed": false,
           "errors": 0,
@@ -1280,8 +1280,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             },
             {
@@ -1289,9 +1289,9 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
               "name": "./src/index.css",
               "profile": {
-                "factory": 47,
-                "building": 792,
-                "dependencies": 115
+                "factory": 49,
+                "building": 804,
+                "dependencies": 116
               }
             },
             {
@@ -1300,13 +1300,13 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
               "profile": {
                 "factory": 118,
-                "building": 494
+                "building": 501
               }
             }
           ],
           "profile": {
-            "factory": 266,
-            "building": 3
+            "factory": 267,
+            "building": 2
           },
           "failed": false,
           "errors": 0,
@@ -1354,15 +1354,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -1391,7 +1391,7 @@
           "name": "./src/index.js",
           "index": 0,
           "index2": 17,
-          "size": 2032,
+          "size": 2203,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1404,8 +1404,8 @@
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           },
           "failed": false,
           "errors": 0,
@@ -1426,7 +1426,7 @@
           "providedExports": [],
           "optimizationBailout": [],
           "depth": 0,
-          "source": "// import \"@babel/polyfill\";\nvar root = document.getElementById('root');\nvar p = document.createElement('p');\np.innerHTML = 'p';\nroot.appendChild(p); // css\n\nimport c3 from './c3.jpg';\nimport './index.css';\nimport createImg from './createImg';\ncreateImg();\nvar img = new Image();\nimg.src = c3;\nimg.classList.add('avatar');\nroot.appendChild(img); // 字体\n\nvar p1 = document.createElement('div');\np1.className = 'iconfont icon-danweixuanze';\nroot.appendChild(p1); // source-map\n// conslle.log('hello world');\n// webpack-dev-server\n\nconsole.log('hello world111sssssswww'); // HMR\n\nimport './style.css';\nvar btn = document.createElement('button');\nbtn.innerHTML = '点击';\ndocument.body.appendChild(btn);\n\nbtn.onclick = function () {\n  var div = document.createElement('div');\n  div.innerHTML = 'item';\n  document.body.appendChild(div);\n};\n\nimport counter from './counter';\nimport number from './number';\ncounter();\nnumber();\n\nif (module.hot) {\n  module.hot.accept('./number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // es6  babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // tree shaking\n\nimport { square } from './math.js';\nconsole.log(square(2)); // lodash\n// 同步\n// import _ from 'lodash';\n// console.log(_.join(['a','b','c'],'*'));\n// 异步\n// function getComponent(){\n// \t// 魔法注释，加上后，打包出来的js会是你注释的值，否则为一个id(如0)值\n// \treturn import(/*webpackChunkName:'lodash'*/'lodash').then(({ default: _ }) =>{\n// \t\tvar element = document.createElement('div');\n// \t\telement.innerHTML = _.join(['zhang', 'yn'], '-');\n// \t\treturn element;\n// \t})\n// }\n\ndocument.addEventListener('click', () => {\n  getComponent().then(element => {\n    document.body.appendChild(element);\n  });\n}); // es7语法省去promise语法\n\nasync function getComponent() {\n  const {\n    default: _\n  } = await import(\n  /*webpackChunkName:'lodash'*/\n  'lodash');\n  const element = document.createElement('div');\n  element.innerHTML = _.join(['z', 'b'], '-');\n  return element;\n}"
+          "source": "// import \"@babel/polyfill\";\nvar root = document.getElementById('root');\nvar p = document.createElement('p');\np.innerHTML = 'p';\nroot.appendChild(p); // css\n\nimport c3 from './c3.jpg';\nimport './index.css';\nimport createImg from './createImg';\ncreateImg();\nvar img = new Image();\nimg.src = c3;\nimg.classList.add('avatar');\nroot.appendChild(img); // 字体\n\nvar p1 = document.createElement('div');\np1.className = 'iconfont icon-danweixuanze';\nroot.appendChild(p1); // source-map\n// conslle.log('hello world');\n// webpack-dev-server\n\nconsole.log('hello world111sssssswww'); // HMR\n\nimport './style.css';\nvar btn = document.createElement('button');\nbtn.innerHTML = '点击';\ndocument.body.appendChild(btn);\n\nbtn.onclick = function () {\n  var div = document.createElement('div');\n  div.innerHTML = 'item';\n  document.body.appendChild(div);\n};\n\nimport counter from './counter';\nimport number from './number';\ncounter();\nnumber();\n\nif (module.hot) {\n  module.hot.accept('./number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // es6  babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // tree shaking\n\nimport { square } from './math.js';\nconsole.log(square(2)); // lodash\n// 同步\n// import _ from 'lodash';\n// console.log(_.join(['a','b','c'],'*'));\n// 异步\n\nfunction getComponent() {\n  // 魔法注释，加上后，打包出来的js会是你注释的值，否则为一个id(如0)值\n  return import(\n  /*webpackChunkName:'lodash'*/\n  'lodash').then(({\n    default: _\n  }) => {\n    var element = document.createElement('div');\n    element.innerHTML = _.join(['zhang', 'yn'], '-');\n    return element;\n  });\n}\n\ndocument.addEventListener('click', () => {\n  getComponent().then(element => {\n    document.body.appendChild(element);\n  });\n}); // es7语法省去promise语法\n// async function getComponent(){\n// \tconst { default: _ } = await import(/*webpackChunkName:'lodash'*/'lodash');\n// \tconst element = document.createElement('div');\n//     element.innerHTML = _.join(['z', 'b'], '-');\n//     return element;\n// }\n// prefetch\n// document.addEventListener('click',() => {\n// \timport(/* webpackPrefetch: true */ './click.js').then(({default:func}) => {\n// \t\tfunc();\n// \t})\n// });"
         },
         {
           "id": "./src/math.js",
@@ -1451,15 +1451,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -1519,15 +1519,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -1611,15 +1611,15 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
               "name": "./src/index.js",
               "profile": {
-                "factory": 59,
-                "building": 320
+                "factory": 54,
+                "building": 314
               }
             }
           ],
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           },
           "failed": false,
           "errors": 0,
@@ -1680,8 +1680,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -1689,15 +1689,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         }
       ],
       "profile": {
         "factory": 118,
-        "building": 494
+        "building": 501
       },
       "failed": false,
       "errors": 0,
@@ -1761,8 +1761,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -1770,16 +1770,16 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\style.css",
           "name": "./src/style.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         }
       ],
       "profile": {
-        "factory": 115,
-        "building": 396,
-        "dependencies": 2
+        "factory": 116,
+        "building": 401,
+        "dependencies": 1
       },
       "failed": false,
       "errors": 0,
@@ -1843,8 +1843,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -1852,9 +1852,9 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         },
         {
@@ -1863,13 +1863,13 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           }
         }
       ],
       "profile": {
-        "factory": 266,
-        "building": 3
+        "factory": 267,
+        "building": 2
       },
       "failed": false,
       "errors": 0,
@@ -1924,8 +1924,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -1933,9 +1933,9 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         },
         {
@@ -1944,13 +1944,13 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           }
         }
       ],
       "profile": {
-        "factory": 266,
-        "building": 3
+        "factory": 267,
+        "building": 2
       },
       "failed": false,
       "errors": 0,
@@ -1996,15 +1996,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -2018,7 +2018,7 @@
           "moduleName": "./src/index.js",
           "type": "import()",
           "userRequest": "lodash",
-          "loc": "77:12-79:11"
+          "loc": "62:9-64:11"
         }
       ],
       "usedExports": true,
@@ -2050,8 +2050,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2059,15 +2059,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         }
       ],
       "profile": {
         "factory": 118,
-        "building": 494
+        "building": 501
       },
       "failed": false,
       "errors": 0,
@@ -2122,8 +2122,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2131,9 +2131,9 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         },
         {
@@ -2142,13 +2142,13 @@
           "name": "./node_modules/style-loader/lib/addStyles.js",
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           }
         }
       ],
       "profile": {
-        "factory": 8,
-        "building": 4
+        "factory": 2,
+        "building": 6
       },
       "failed": false,
       "errors": 0,
@@ -2194,8 +2194,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2203,15 +2203,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\lodash\\lodash.js",
           "name": "./node_modules/lodash/lodash.js",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         }
       ],
       "profile": {
         "factory": 4,
-        "building": 3
+        "building": 1
       },
       "failed": false,
       "errors": 0,
@@ -2257,8 +2257,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2266,15 +2266,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\lodash\\lodash.js",
           "name": "./node_modules/lodash/lodash.js",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         }
       ],
       "profile": {
         "factory": 4,
-        "building": 3
+        "building": 1
       },
       "failed": false,
       "errors": 0,
@@ -2320,15 +2320,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -2405,15 +2405,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -2472,15 +2472,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -2539,8 +2539,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2548,9 +2548,9 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         },
         {
@@ -2559,13 +2559,13 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           }
         }
       ],
       "profile": {
-        "factory": 266,
-        "building": 3
+        "factory": 267,
+        "building": 2
       },
       "failed": false,
       "errors": 0,
@@ -2622,8 +2622,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2631,9 +2631,9 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         },
         {
@@ -2642,13 +2642,13 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           }
         }
       ],
       "profile": {
-        "factory": 266,
-        "building": 3
+        "factory": 267,
+        "building": 2
       },
       "failed": false,
       "errors": 0,
@@ -2696,8 +2696,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2705,9 +2705,9 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         },
         {
@@ -2716,13 +2716,13 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           }
         }
       ],
       "profile": {
-        "factory": 266,
-        "building": 3
+        "factory": 267,
+        "building": 2
       },
       "failed": false,
       "errors": 0,
@@ -2770,8 +2770,8 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         },
         {
@@ -2779,9 +2779,9 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\style-loader\\index.js!E:\\study\\webpack-demo\\node_modules\\css-loader\\dist\\cjs.js!E:\\study\\webpack-demo\\node_modules\\postcss-loader\\src\\index.js!E:\\study\\webpack-demo\\src\\index.css",
           "name": "./src/index.css",
           "profile": {
-            "factory": 47,
-            "building": 792,
-            "dependencies": 115
+            "factory": 49,
+            "building": 804,
+            "dependencies": 116
           }
         },
         {
@@ -2790,13 +2790,13 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./src/index.css",
           "profile": {
             "factory": 118,
-            "building": 494
+            "building": 501
           }
         }
       ],
       "profile": {
-        "factory": 266,
-        "building": 3
+        "factory": 267,
+        "building": 2
       },
       "failed": false,
       "errors": 0,
@@ -2844,15 +2844,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -2881,7 +2881,7 @@
       "name": "./src/index.js",
       "index": 0,
       "index2": 17,
-      "size": 2032,
+      "size": 2203,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2894,8 +2894,8 @@
       "issuerName": null,
       "issuerPath": null,
       "profile": {
-        "factory": 59,
-        "building": 320
+        "factory": 54,
+        "building": 314
       },
       "failed": false,
       "errors": 0,
@@ -2916,7 +2916,7 @@
       "providedExports": [],
       "optimizationBailout": [],
       "depth": 0,
-      "source": "// import \"@babel/polyfill\";\nvar root = document.getElementById('root');\nvar p = document.createElement('p');\np.innerHTML = 'p';\nroot.appendChild(p); // css\n\nimport c3 from './c3.jpg';\nimport './index.css';\nimport createImg from './createImg';\ncreateImg();\nvar img = new Image();\nimg.src = c3;\nimg.classList.add('avatar');\nroot.appendChild(img); // 字体\n\nvar p1 = document.createElement('div');\np1.className = 'iconfont icon-danweixuanze';\nroot.appendChild(p1); // source-map\n// conslle.log('hello world');\n// webpack-dev-server\n\nconsole.log('hello world111sssssswww'); // HMR\n\nimport './style.css';\nvar btn = document.createElement('button');\nbtn.innerHTML = '点击';\ndocument.body.appendChild(btn);\n\nbtn.onclick = function () {\n  var div = document.createElement('div');\n  div.innerHTML = 'item';\n  document.body.appendChild(div);\n};\n\nimport counter from './counter';\nimport number from './number';\ncounter();\nnumber();\n\nif (module.hot) {\n  module.hot.accept('./number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // es6  babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // tree shaking\n\nimport { square } from './math.js';\nconsole.log(square(2)); // lodash\n// 同步\n// import _ from 'lodash';\n// console.log(_.join(['a','b','c'],'*'));\n// 异步\n// function getComponent(){\n// \t// 魔法注释，加上后，打包出来的js会是你注释的值，否则为一个id(如0)值\n// \treturn import(/*webpackChunkName:'lodash'*/'lodash').then(({ default: _ }) =>{\n// \t\tvar element = document.createElement('div');\n// \t\telement.innerHTML = _.join(['zhang', 'yn'], '-');\n// \t\treturn element;\n// \t})\n// }\n\ndocument.addEventListener('click', () => {\n  getComponent().then(element => {\n    document.body.appendChild(element);\n  });\n}); // es7语法省去promise语法\n\nasync function getComponent() {\n  const {\n    default: _\n  } = await import(\n  /*webpackChunkName:'lodash'*/\n  'lodash');\n  const element = document.createElement('div');\n  element.innerHTML = _.join(['z', 'b'], '-');\n  return element;\n}"
+      "source": "// import \"@babel/polyfill\";\nvar root = document.getElementById('root');\nvar p = document.createElement('p');\np.innerHTML = 'p';\nroot.appendChild(p); // css\n\nimport c3 from './c3.jpg';\nimport './index.css';\nimport createImg from './createImg';\ncreateImg();\nvar img = new Image();\nimg.src = c3;\nimg.classList.add('avatar');\nroot.appendChild(img); // 字体\n\nvar p1 = document.createElement('div');\np1.className = 'iconfont icon-danweixuanze';\nroot.appendChild(p1); // source-map\n// conslle.log('hello world');\n// webpack-dev-server\n\nconsole.log('hello world111sssssswww'); // HMR\n\nimport './style.css';\nvar btn = document.createElement('button');\nbtn.innerHTML = '点击';\ndocument.body.appendChild(btn);\n\nbtn.onclick = function () {\n  var div = document.createElement('div');\n  div.innerHTML = 'item';\n  document.body.appendChild(div);\n};\n\nimport counter from './counter';\nimport number from './number';\ncounter();\nnumber();\n\nif (module.hot) {\n  module.hot.accept('./number', () => {\n    document.body.removeChild(document.getElementById('number'));\n    number();\n  });\n} // es6  babel\n\n\nconst arr = [new Promise(() => {}), new Promise(() => {})];\narr.map(item => {\n  console.log(item);\n}); // tree shaking\n\nimport { square } from './math.js';\nconsole.log(square(2)); // lodash\n// 同步\n// import _ from 'lodash';\n// console.log(_.join(['a','b','c'],'*'));\n// 异步\n\nfunction getComponent() {\n  // 魔法注释，加上后，打包出来的js会是你注释的值，否则为一个id(如0)值\n  return import(\n  /*webpackChunkName:'lodash'*/\n  'lodash').then(({\n    default: _\n  }) => {\n    var element = document.createElement('div');\n    element.innerHTML = _.join(['zhang', 'yn'], '-');\n    return element;\n  });\n}\n\ndocument.addEventListener('click', () => {\n  getComponent().then(element => {\n    document.body.appendChild(element);\n  });\n}); // es7语法省去promise语法\n// async function getComponent(){\n// \tconst { default: _ } = await import(/*webpackChunkName:'lodash'*/'lodash');\n// \tconst element = document.createElement('div');\n//     element.innerHTML = _.join(['z', 'b'], '-');\n//     return element;\n// }\n// prefetch\n// document.addEventListener('click',() => {\n// \timport(/* webpackPrefetch: true */ './click.js').then(({default:func}) => {\n// \t\tfunc();\n// \t})\n// });"
     },
     {
       "id": "./src/math.js",
@@ -2941,15 +2941,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -3009,15 +3009,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -3101,15 +3101,15 @@
           "identifier": "E:\\study\\webpack-demo\\node_modules\\babel-loader\\lib\\index.js!E:\\study\\webpack-demo\\src\\index.js",
           "name": "./src/index.js",
           "profile": {
-            "factory": 59,
-            "building": 320
+            "factory": 54,
+            "building": 314
           }
         }
       ],
       "profile": {
-        "factory": 47,
-        "building": 792,
-        "dependencies": 115
+        "factory": 49,
+        "building": 804,
+        "dependencies": 116
       },
       "failed": false,
       "errors": 0,
@@ -3213,8 +3213,8 @@
               "issuerName": null,
               "issuerPath": null,
               "profile": {
-                "factory": 40,
-                "building": 22
+                "factory": 37,
+                "building": 19
               },
               "failed": false,
               "errors": 0,
@@ -3259,8 +3259,8 @@
                   "identifier": "E:\\study\\webpack-demo\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\study\\webpack-demo\\src\\index.html",
                   "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
                   "profile": {
-                    "factory": 40,
-                    "building": 22
+                    "factory": 37,
+                    "building": 19
                   }
                 }
               ],
@@ -3312,8 +3312,8 @@
                   "identifier": "E:\\study\\webpack-demo\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\study\\webpack-demo\\src\\index.html",
                   "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
                   "profile": {
-                    "factory": 40,
-                    "building": 22
+                    "factory": 37,
+                    "building": 19
                   }
                 },
                 {
@@ -3327,8 +3327,8 @@
                 }
               ],
               "profile": {
-                "factory": 85,
-                "building": 3
+                "factory": 90,
+                "building": 1
               },
               "failed": false,
               "errors": 0,
@@ -3374,8 +3374,8 @@
                   "identifier": "E:\\study\\webpack-demo\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\study\\webpack-demo\\src\\index.html",
                   "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
                   "profile": {
-                    "factory": 40,
-                    "building": 22
+                    "factory": 37,
+                    "building": 19
                   }
                 },
                 {
@@ -3389,8 +3389,8 @@
                 }
               ],
               "profile": {
-                "factory": 85,
-                "building": 3
+                "factory": 90,
+                "building": 1
               },
               "failed": false,
               "errors": 0,
@@ -3447,8 +3447,8 @@
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 40,
-            "building": 22
+            "factory": 37,
+            "building": 19
           },
           "failed": false,
           "errors": 0,
@@ -3493,8 +3493,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\study\\webpack-demo\\src\\index.html",
               "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "profile": {
-                "factory": 40,
-                "building": 22
+                "factory": 37,
+                "building": 19
               }
             }
           ],
@@ -3546,8 +3546,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\study\\webpack-demo\\src\\index.html",
               "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "profile": {
-                "factory": 40,
-                "building": 22
+                "factory": 37,
+                "building": 19
               }
             },
             {
@@ -3561,8 +3561,8 @@
             }
           ],
           "profile": {
-            "factory": 85,
-            "building": 3
+            "factory": 90,
+            "building": 1
           },
           "failed": false,
           "errors": 0,
@@ -3608,8 +3608,8 @@
               "identifier": "E:\\study\\webpack-demo\\node_modules\\html-webpack-plugin\\lib\\loader.js!E:\\study\\webpack-demo\\src\\index.html",
               "name": "./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html",
               "profile": {
-                "factory": 40,
-                "building": 22
+                "factory": 37,
+                "building": 19
               }
             },
             {
@@ -3623,8 +3623,8 @@
             }
           ],
           "profile": {
-            "factory": 85,
-            "building": 3
+            "factory": 90,
+            "building": 1
           },
           "failed": false,
           "errors": 0,
