@@ -1,7 +1,11 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+let BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // var CleanWebpackPlugin = require('clean-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const AddAssetHtmlPlugin = require("add-asset-html-webpack-plugin");
+
+const webpack = require("webpack");
 module.exports = {
     entry:{
         // lodash:'./src/lodash.js',
@@ -13,6 +17,11 @@ module.exports = {
                 test: /\.js$/, 
                 exclude: /node_modules/, 
                 loader: "babel-loader"
+            },
+            { 
+                test: /\.tsx?$/, 
+                exclude: /node_modules/, 
+                use: "ts-loader"
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
@@ -37,7 +46,20 @@ module.exports = {
         new HtmlWebpackPlugin({
             template:'src/index.html'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new BundleAnalyzerPlugin(),
+        new webpack.DllReferencePlugin({
+            context:__dirname,
+            manifest:require('../dll/manifest.json'),//通过require引入manifest.json文件
+            name:'vendors'//引入dll文件的变量名
+        }),
+        new AddAssetHtmlPlugin([{
+            // 要添加到编译中的文件的绝对路径由于含有hash值所以引入所有js
+            filepath: path.resolve(__dirname, "../dll/*.js"),
+            outputPath: "dll",
+            publicPath: "dll",
+            includeSourcemap: false
+        }])
     ],
     optimization: {
         // development配置  要在package.json  中使用sideEffects属性

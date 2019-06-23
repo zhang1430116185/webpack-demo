@@ -106,4 +106,20 @@ import _ from 'lodash';
 import $ from 'jquery';
 const dom = $('<div>');
 dom.html(_.join(['z','y'],'-----'));
-$(body).append(dom);
+// $(body).append(dom);
+
+// service work  PWA
+// if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', () => {
+//         navigator.serviceWorker.register('/service-worker.js')
+//         .then(registration => {
+//             console.log('service-worker registed');
+//         }).catch(error => {
+//             console.log('service-worker register error');
+//         })
+//     })
+// }
+import axios from 'axios';
+axios.get('/react/api/header.json').then(function(res){
+	console.log(res);
+})

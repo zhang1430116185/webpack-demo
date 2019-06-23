@@ -11,7 +11,28 @@ const devConfig = {
         open:false,
         port: 8080,
         hot:true,
-        hotOnly:true
+        hotOnly:true,
+        proxy: {
+            // index: '', // 如果要代理根路径，需要把index设置为false或者''
+            '/react/api': {
+                target: 'http://www.dell-lee.com', // 代理请求接口
+                // secure: false, // 如果是https网址，这里需要设置为false
+                // pathRewrite: { // 代理接口，访问header.json时会帮你请求demo.json
+                //     'header.json': 'demo.json'
+                // },
+                // changeOrigin: true, // 后端可能设置了changeOrigin防止爬虫，这里我们设置true以后就可以避开这个限制了
+                // headers: { // 设置请求头
+                //     host: 'www.dell-lee.com',
+                //                 cookie: ....
+                // },
+                // bypass: function(req, res, proxyOptions) { // 拦截，如果请求的是一个html内容，则返回index.html
+                //     if (req.headers.accept.indexOf('html') !== -1) {
+                //         console.log('Skipping proxy for browser request.');
+                //         return '/index.html';
+                //     }
+                // }
+            }
+        }
         // compress: true,
         // port: 9000
     },

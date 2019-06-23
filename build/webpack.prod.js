@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const merge = require('webpack-merge');
 const commonConfig = require('./webpack.common.js');
@@ -44,6 +45,10 @@ const prodConfig = {
             filename: '[name].css',
             chunkFilename: '[id].css',
         }),
+        new WorkboxPlugin.GenerateSW({
+            clientsClaim: true,
+            skipWaiting: true
+        })
     ],
     output:{
         // 配置前缀
