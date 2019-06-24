@@ -123,3 +123,6 @@ import axios from 'axios';
 axios.get('/react/api/header.json').then(function(res){
 	console.log(res);
 })
+
+// loader
+console.log('zyn');

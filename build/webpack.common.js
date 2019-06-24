@@ -11,13 +11,28 @@ module.exports = {
         // lodash:'./src/lodash.js',
         main:'./src/index.js'
     },
+    resolveLoader:{
+        modules:['node_modules','./loaders']
+    },
     module:{
         rules:[
             { 
                 test: /\.js$/, 
-                exclude: /node_modules/, 
-                loader: "babel-loader"
+                use:[{
+                    // loader:path.resolve(__dirname,'../loader/replaceLoader.js'),
+                    loader:'replaceLoader',
+                    options:{
+                        name:'yananz'
+                    }
+                },{
+                    loader: "babel-loader"
+                }]
             },
+            // { 
+            //     test: /\.js$/, 
+            //     exclude: /node_modules/, 
+            //     loader: "babel-loader"
+            // },
             { 
                 test: /\.tsx?$/, 
                 exclude: /node_modules/, 
@@ -47,7 +62,7 @@ module.exports = {
             template:'src/index.html'
         }),
         new CleanWebpackPlugin(),
-        new BundleAnalyzerPlugin(),
+        // new BundleAnalyzerPlugin(),
         new webpack.DllReferencePlugin({
             context:__dirname,
             manifest:require('../dll/manifest.json'),//通过require引入manifest.json文件
